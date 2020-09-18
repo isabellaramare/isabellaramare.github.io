@@ -5,18 +5,18 @@ import '../App.css';
 
 function Home() {
   return (
-    <Container>
-      <Row>
-        <Col>
-        <h1>
-          TJENAAAA
-        </h1>
-        <p>
-          här har vi lite text, hej hej hej
-        </p>
+    <Container fluid>
+      <Row className="justify-content-md-center">
+        <Col md={4}>
+          <h1>
+            TJENAAAA
+          </h1>
+          <p>
+            här har vi lite text, hej hej hej
+          </p>
         </Col>
-        <Col>
-          <img src={logo} className="App-logo" alt="logo" />
+        <Col md={4}>
+          <img src={logo} className="logo" alt="logo" />
         </Col>       
       </Row>
     </Container>
