@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './skull.svg';
-import Home from '../components/home'
+import logo from './images/skull.svg';
+import Home from './components/home';
 import './App.css';
 
 function App() {
