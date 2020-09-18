@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/skull.svg';
 import { Container, Row, Col } from 'react-bootstrap'
-import './App.css';
+import '../App.css';
 
 function Home() {
   return (
