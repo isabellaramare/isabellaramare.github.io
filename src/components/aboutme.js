@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Logo from './skulllogo'
 import '../App.css';
 
-class Home extends React.Component { 
+class AboutMe extends React.Component { 
   render() {
     return (
       <Container fluid className="bg-lavender">
@@ -25,4 +25,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default AboutMe;

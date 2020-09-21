@@ -1,0 +1,27 @@
+/*! Bootstrap 4 custom build by Themestr.app */
+
+$lavender:#d8baf7;
+$pink:#fc63c6;
+$purple:#87125d;
+$indigo:#4824ae;
+$blue:#2248d3;
+
+/*! Import Bootstrap 4 variables */
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$primary:$purple;
+$secondary:$red;
+$warning:$pink;
+$danger:$pink;
+
+$body-bg:$gray-100;
+$nav-tabs-link-active-color: $pink;
+$navbar-light-color:rgba($black, .9);
+$navbar-light-hover-color:rgba($pink, .7);
+$navbar-light-active-color:rgba($pink, .9);
+$dropdown-link-hover-color: $pink;
+$nav-link-active-color: $pink;
+
+@import "bootstrap";
