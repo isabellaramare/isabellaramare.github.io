@@ -13,6 +13,7 @@ const Mainrouting = () => (
         <Route path="/aboutme" component={ Aboutme } />
         <Route path="/projects" component={ Projects } />
         <Route path="/contact" component={ Contact } />
+        <Route component={() => (<div>404 Not found </div>)} />
     </Switch>
 );
 
