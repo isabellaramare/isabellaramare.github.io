@@ -9,7 +9,7 @@ class MyNavbar extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link defaultValue href="/home">home</Nav.Link>
+            <Nav.Link defaultValue active href="/home">home</Nav.Link>
             <Nav.Link href="/resume">resume</Nav.Link>
             <Nav.Link href="/aboutme">about me</Nav.Link>
             <NavDropdown title="projects" id="basic-nav-dropdown">
