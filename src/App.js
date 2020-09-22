@@ -7,8 +7,8 @@ import Mainrouting from './components/mainrouting';
 function App() {
   return (    
     <Container fluid> 
-      <MyNavbar />
-      <Mainrouting />        
+      <MyNavbar />  
+      <Mainrouting />    
     </Container>   
   );
 }

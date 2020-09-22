@@ -5,18 +5,18 @@ import '../App.css';
 class Contact extends React.Component { 
   render() {
     return (
-      <Container fluid>
-        <Row className="justify-content-md-center">
-          <Col sm={6} md={4}>
+      <Container fluid className="bg-lavender">
+        <Row className="justify-content-md-center p-5 vh-100">
+          <Col sm={6} md={4} className="my-auto">
             <h1>
-              CV
+              CONTACT
             </h1>
             <p>
-              här är mitt CV
+              här har vi lite text, hej hej hej
             </p>
           </Col>
-          <Col sm={6} md={4}>
-
+          <Col sm={6} md={4} className="my-auto">
+          
           </Col>       
         </Row>
       </Container>
