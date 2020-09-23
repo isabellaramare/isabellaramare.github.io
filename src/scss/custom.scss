@@ -2,7 +2,7 @@
 
 $lavender:#d8baf7;
 $pink:#fc63c6;
-$purple:#87125d;
+$purple:#87125D;
 $indigo:#4824ae;
 $blue:#2248d3;
 
@@ -10,18 +10,32 @@ $blue:#2248d3;
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rozha+One&display=swap');
 
-$primary:$purple;
-$secondary:$red;
+$primary:$pink;
+$secondary:$purple;
 $warning:$pink;
 $danger:$pink;
 
+$theme-colors: (
+  purple: $purple,
+  pink: $pink,
+  lavender: $lavender
+);
+
 $body-bg:$gray-100;
+
 $nav-tabs-link-active-color: $pink;
 $navbar-light-color:rgba($black, .9);
 $navbar-light-hover-color:rgba($pink, .7);
 $navbar-light-active-color:rgba($pink, .9);
 $dropdown-link-hover-color: $pink;
 $nav-link-active-color: $pink;
+$navbar-brand-font-size: 2rem;
+
+$font-family-sans-serif: 'Montserrat', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      'Rozha One', Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;
 
 @import "bootstrap";

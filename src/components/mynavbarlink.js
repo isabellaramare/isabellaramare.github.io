@@ -2,6 +2,8 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 
 class MyNavbarLink extends React.Component {
+
+
   handleClick = () => this.props.onClick(this.props.index)
   
   render() {

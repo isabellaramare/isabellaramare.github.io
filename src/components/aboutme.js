@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
-import Logo from './skulllogo'
 import '../App.css';
 
 class AboutMe extends React.Component { 

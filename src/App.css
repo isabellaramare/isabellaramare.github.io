@@ -1,28 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rozha+One&display=swap');
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Rozha One', serif; 
-  color: #1A1A1A;;
+body {
+  overflow-x: hidden;
 }
 
-p, a {
-  font-family: 'Montserrat', sans-serif;
-  color: #1A1A1A;;
+h1 {
+  font-family: 'Rozha One', serif;  
 }
+
+h2 {
+  color: #fc63c6;
+}
+
 
 .nav-link {
   margin: 10px 5px;  
   font-size: 1vw;
 }
 
+.navbar-brand {
+  letter-spacing: .5rem;
+}
+
 .logo {
   width: 100%;
 }
 
-.vh-100 {
-  height: 100vh;
+.padding-top {
+  padding-top: 6vw;
 }
 
-.padding-top {
-  padding-top: 50px;
+.title-lg {
+  font-size: 4vw;
 }
+
+.text-lg {
+  font-size: 2vw;
+}
+
+.full-width {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.bg-tilt {
+  background-image: url('./images/tilt-bg-pink.svg');
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.bg-spots {
+  background-image: url('./images/spots-bg-dark.svg');
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+
