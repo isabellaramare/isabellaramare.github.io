@@ -1,23 +1,17 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import '../App.css';
+import ContactForm from './contactform';
 
 class Contact extends React.Component { 
   render() {
     return (
-      <Container fluid className="bg-lavender">
-        <Row className="justify-content-md-center p-5 vh-100">
-          <Col sm={6} md={4} className="my-auto">
-            <h1>
-              CONTACT
-            </h1>
-            <p>
-              här har vi lite text, hej hej hej
-            </p>
+      <Container fluid className="bg-spots-blask full-width">
+        <Row className="justify-content-md-center vh-100">
+          <Col md={6} className="my-auto">
+            <h1 className="title-lg text-white">Skriv och säg hej!</h1>
+            <ContactForm />
           </Col>
-          <Col sm={6} md={4} className="my-auto">
-          
-          </Col>       
         </Row>
       </Container>
     );

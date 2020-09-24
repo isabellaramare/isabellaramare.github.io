@@ -2,7 +2,13 @@
 
 body {
   overflow-x: hidden;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
+
+ body::-webkit-scrollbar {
+  display: none;
+} 
 
 h1 {
   font-family: 'Rozha One', serif;  
@@ -12,10 +18,26 @@ h2 {
   color: #fc63c6;
 }
 
+/*  
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
 
 .nav-link {
   margin: 10px 5px;  
-  font-size: 1vw;
+  font-size: 1.5rem;
 }
 
 .navbar-brand {
@@ -26,16 +48,27 @@ h2 {
   width: 100%;
 }
 
-.padding-top {
+.py-6 {
   padding-top: 6vw;
+  padding-bottom: 6vw;
 }
 
 .title-lg {
   font-size: 4vw;
+  line-height: 1;
+}
+
+.title-md {
+  font-size: 3vw;
+  line-height: 1;
 }
 
 .text-lg {
   font-size: 2vw;
+}
+
+.text-md {
+  font-size: 1vw;
 }
 
 .full-width {
@@ -45,14 +78,46 @@ h2 {
 
 .bg-tilt {
   background-image: url('./images/tilt-bg-pink.svg');
-  background-size: 100%;
+
+}
+
+.bg-spots-light {
+  background-image: url('./images/spots-bg-light.svg');
+  background-size: cover;
   background-attachment: fixed;
 }
 
-.bg-spots {
-  background-image: url('./images/spots-bg-dark.svg');
-  background-size: 100%;
+.bg-spots-blask {
+  background-image: url('./images/spots-bg-blask.svg');
+  background-size: cover;
   background-attachment: fixed;
+}
+
+.bg-spots-dark {
+  background-image: url('./images/spots-bg-dark.svg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-white-80 {
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation-delay: 1s;   
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 100;}
+}
+
+.message {
+  max-height: 500px;
 }
 
 
