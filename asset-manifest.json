@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.9388c00f.chunk.css",
-    "main.js": "/static/js/main.5f115c2f.chunk.js",
-    "main.js.map": "/static/js/main.5f115c2f.chunk.js.map",
+    "main.css": "/static/css/main.7de87ff7.chunk.css",
+    "main.js": "/static/js/main.fc178c8d.chunk.js",
+    "main.js.map": "/static/js/main.fc178c8d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3ceab397.js",
     "runtime-main.js.map": "/static/js/runtime-main.3ceab397.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.aea0e2c2.chunk.js": "/static/js/2.aea0e2c2.chunk.js",
-    "static/js/2.aea0e2c2.chunk.js.map": "/static/js/2.aea0e2c2.chunk.js.map",
+    "static/js/2.776080d7.chunk.js": "/static/js/2.776080d7.chunk.js",
+    "static/js/2.776080d7.chunk.js.map": "/static/js/2.776080d7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e9d6a6373fd8b4c102fe68f1931768bc.js": "/precache-manifest.e9d6a6373fd8b4c102fe68f1931768bc.js",
+    "precache-manifest.3b44d4d8b336062756e5a9a3f8476603.js": "/precache-manifest.3b44d4d8b336062756e5a9a3f8476603.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.9388c00f.chunk.css.map": "/static/css/main.9388c00f.chunk.css.map",
-    "static/js/2.aea0e2c2.chunk.js.LICENSE.txt": "/static/js/2.aea0e2c2.chunk.js.LICENSE.txt",
+    "static/css/main.7de87ff7.chunk.css.map": "/static/css/main.7de87ff7.chunk.css.map",
+    "static/js/2.776080d7.chunk.js.LICENSE.txt": "/static/js/2.776080d7.chunk.js.LICENSE.txt",
     "static/media/isabella portrait.png": "/static/media/isabella portrait.222269b3.png",
+    "static/media/App.css": "/static/media/tilt-bg-pink.65ecf315.svg",
+    "static/media/selfportrait.svg": "/static/media/selfportrait.aee1f71c.svg",
     "static/media/skull-invert.svg": "/static/media/skull-invert.a482d0ee.svg",
-    "static/media/skull.svg": "/static/media/skull.702283c4.svg",
-    "static/media/App.css": "/static/media/tilt-bg-pink.65ecf315.svg"
+    "static/media/skull.svg": "/static/media/skull.702283c4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3ceab397.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.aea0e2c2.chunk.js",
-    "static/css/main.9388c00f.chunk.css",
-    "static/js/main.5f115c2f.chunk.js"
+    "static/js/2.776080d7.chunk.js",
+    "static/css/main.7de87ff7.chunk.css",
+    "static/js/main.fc178c8d.chunk.js"
   ]
 }
