@@ -1,80 +1,87 @@
-import React, { Component } from 'react';
-import { Form, Button, Row, Col } from 'react-bootstrap';
+import React, { Component, useState } from 'react';
+import { Form, Row, Col } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import SubmitButton from './submitbutton';
 
-class ContactForm extends Component {  
-  constructor(props) {
-    super(props);
+class ContactForm extends React.Component {
+  
+  constructor() {
+    super();
     this.state = {
-      number: 0
+      isLoading: false,       
     };
- }
 
-  setRandomNumber() {
-    this.setState({ number: Math.random() * 100000 | 0 })
   }
-
+ 
   // TODO
   // gör så att skicka-knappen ändrar text till "Skickar..." och inte går att klicka på medans mail skickas. 
   // validera input i formuläret (t.ex. ska det inte gå att skicka om inte alla fält är ifyllda)
 
-  sendEmail(e) {     
-    this.setRandomNumber()       
-    var service_id = "contact_ramare";
-    var template_id = "contact_form";
-    var user_id = "user_vg7OeUzmz8qbEl1cSynsa"
-    e.preventDefault();        
+   sendEmail = async (e) => {   
+  
+    e.preventDefault();         
 
-    emailjs.sendForm(service_id, template_id, e.target, user_id)
-    .then(function(){ 
-      alert("Skickat!");       
-    }, function(err) {
-      alert("Försändelsen misslyckades!\r\n Response:\n " + JSON.stringify(err));       
-    });
-    return false;    
-  }
+      this.setState({isLoading: true}) 
 
-  render() {     
-    const isButtonDisabled = this.state.isButtonDisabled;
+      var service_id = "contact_ramare";
+      var template_id = "contact_form";
+      var user_id = "user_vg7OeUzmz8qbEl1cSynsa"
+
+      emailjs.sendForm(service_id, template_id, e.target, user_id)
+      .then(function(){ 
+        alert("Skickat!");       
+      }, function(err) {
+        alert("Försändelsen misslyckades!\r\n Response:\n " + JSON.stringify(err));       
+      });   
+
+      this.setState({isLoading: false}) 
+    }
+  
+  render() {
     return(
         <Form id="contact-form" onSubmit={this.sendEmail}>
-           <Form.Group>
-            <Form.Control type="hidden" name="contact_number" value={this.state.number} />
+            <Form.Group>
           </Form.Group> 
           <Row>
-            <Col>
+            <Col md={4} sm={12}>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Din mailadress</Form.Label>
-                <Form.Control type="email" placeholder="name@example.com" name="user_email"/>
+                <Form.Control type="email" placeholder="name@example.com" name="user_email" required/>
               </Form.Group>
             </Col>
-            <Col>
-              <Form-Group controlId="formBasicName">
+            <Col md={4} sm={12}>
+              <Form.Group controlId="formBasicName">
                 <Form.Label>Ditt namn</Form.Label>
-                <Form.Control placeholder="Anna Nyhm" name="user_name"/> 
-              </Form-Group>
+                <Form.Control placeholder="Anna Nyhm" name="user_name" required/> 
+              </Form.Group>
             </Col>
-            <Col>
-              <Form-Group controlId="formBasicSubject">
+            <Col md={4} sm={12}>
+              <Form.Group controlId="formBasicSubject">
                 <Form.Label>Ämne</Form.Label>
-                <Form.Control placeholder="Meddelandets ämne" name="subject"/> 
-              </Form-Group>             
+                <Form.Control placeholder="Meddelandets ämne" name="subject" required/> 
+              </Form.Group>             
             </Col>
           </Row>
           <Row>
             <Col>
               <Form.Group controlId="formBasicMessage">
                 <Form.Label>Meddelande</Form.Label>
-                <Form.Control className="message" as="textarea" placeholder="Skriv ditt meddelande här!" name="message"/>
+                <Form.Control className="message" as="textarea" placeholder="Skriv ditt meddelande här!" name="message" required/>
               </Form.Group>
             </Col>
           </Row>  
-          <Button className="mt-3" variant="outline-primary" type="submit" disabled={isButtonDisabled} onClick={this.handleClick}>
-            {this.state.buttonText}
-          </Button> 
+        {/*  <Button 
+            className="mt-3" 
+            variant="outline-primary" 
+            type="submit" 
+            disabled={this.buttonIsLoading} >
+            {this.buttonIsLoading ? 'Skickar...' : 'Skicka'}
+          </Button>  */}
+          <SubmitButton isLoading={this.isLoading} />
         </Form>       
     )
-  } 
+  }
+  
 }
 
 export default ContactForm; 

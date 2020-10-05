@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  color: #fc63c6;
+  color: #87125D;
 }
 
 /*  
@@ -35,17 +35,72 @@ h2 {
   background: #555;
 } */
 
-.nav-link {
-  margin: 10px 5px;  
-  font-size: 1.5rem;
+.fade-in-scroll {
+  animation: fadeinscroll 1s;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -.5s);
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
 
-.navbar-brand {
+@keyframes fadeinscroll {
+  0% {opacity: 100;}
+  100% {opacity: 0;}
+}
+
+.rotate {
+  animation: rotate 5s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -5s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both; 
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation-delay: .5s;   
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 100;}
+}
+
+
+.nav-link {
+  margin: 0px 5px;  
+  font-size: 1.2rem;
+}
+
+.brand {
   letter-spacing: .5rem;
 }
 
 .logo {
   width: 100%;
+}
+
+.selfportrait {
+  width: 50%;
+}
+
+.mt-extra {
+  margin-top: 100px;
+}
+
+.pb-extra {
+  padding-bottom: 100px;
 }
 
 .py-6 {
@@ -54,21 +109,25 @@ h2 {
 }
 
 .title-lg {
-  font-size: 4vw;
+  font-size: 4rem;
   line-height: 1;
 }
 
 .title-md {
-  font-size: 3vw;
+  font-size: 3rem;
   line-height: 1;
 }
 
 .text-lg {
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 .text-md {
-  font-size: 1vw;
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 1rem;
 }
 
 .full-width {
@@ -78,7 +137,7 @@ h2 {
 
 .bg-tilt {
   background-image: url('./images/tilt-bg-pink.svg');
-
+  background-size: cover;
 }
 
 .bg-spots-light {
@@ -100,24 +159,85 @@ h2 {
 }
 
 .bg-white-80 {
-  background-color: rgba(245, 245, 245, 0.8);
+  background-color: rgba(245, 245, 245, 0.93);
 }
 
-.fade-in {
-  opacity: 0;
-  animation-name: fadein;
-  animation-duration: 4s;
-  animation-delay: 1s;   
-  animation-fill-mode: forwards; 
+.bg-pink-one {
+  background-color: #fc63c6bd;
 }
 
-@keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 100;}
+.bg-pink-two {
+  background-color: #ffa2dfbd;
+}
+
+.bg-pink-three {
+  background-color: #ffc4eabd;
+}
+
+.bg-pink-four {
+  background-color: #ffe0f4bd;
+}
+
+.bg-shells {
+  background-image: url('./images/seashell.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.vh-min-100 {
+  min-height: 100vh;
+}
+
+.letter-space {
+  letter-spacing: 3vh;
 }
 
 .message {
   max-height: 500px;
+  min-height: 40px;
 }
 
+@media screen and (max-width: 600px) {
 
+  .pt-extra {
+    padding-top: 30vw;  
+  }
+
+  .title-lg {
+    font-size: 2.8rem;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .title-md {
+    word-wrap: break-word;
+    font-size: 2rem;
+  }
+
+  .text-lg {
+    font-size: 1.2rem;
+    padding-top: 7vw;
+    text-align: center;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+
+  .text-sm {
+    text-justify: newspaper;
+  }
+
+  .logo {
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+  }
+
+  .brand {
+    letter-spacing: .2rem;
+  }
+
+  .letter-space {
+    letter-spacing: 1.8vh;
+  }
+}

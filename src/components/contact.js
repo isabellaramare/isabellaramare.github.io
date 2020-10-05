@@ -7,8 +7,8 @@ class Contact extends React.Component {
   render() {
     return (
       <Container fluid className="bg-spots-blask full-width">
-        <Row className="justify-content-md-center vh-100">
-          <Col md={6} className="my-auto">
+        <Row className="justify-content-md-center vh-min-100 py-5">
+          <Col sm={12} md={6} className="my-auto pt-5">
             <h1 className="title-lg text-white">Skriv och säg hej!</h1>
             <ContactForm />
           </Col>

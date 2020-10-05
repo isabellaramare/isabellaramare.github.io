@@ -6,18 +6,19 @@ import '../App.css';
 class Home extends React.Component { 
   render() {
     return(
-      <Container fluid className="bg-spots-blask full-width">
-        <Row className="justify-content-md-center p-5 vh-100 user-select-none">
-          <Col sm={6} md={6} className="my-auto fade-in">
-            <h1 className="title-lg">
-              Letar du efter en <span className="text-light">systemutvecklare?</span>
+      <Container fluid className="full-width pt-extra bg-spots-blask">
+        <Row className="justify-content-center user-select-none vh-min-100">
+          <Col sm={12} md={5} className="my-auto fade-in justify-content-center">
+            <h1 className="title-lg text-light">
+              Letar du efter en system-utvecklare?
             </h1>
             <p className="text-lg">
-              Då har du kommit rätt! <br/>Klicka nedan för att se mina tidigare projekt.
+              Då har du kommit rätt! Klicka nedan för att se mina tidigare projekt eller kontakta mig direkt!
             </p>
-            <Button className="mt-4" size="lg" href="#/projects" variant="outline-purple">projekt</Button>
+            <Button className="mt-4 btn-block" size="lg" href="#/projects" variant="outline-purple">projekt</Button>
+            <Button className="mt-4 btn-block" size="lg" href="#/contact" variant="outline-purple">säg hej!</Button>
           </Col>
-          <Col sm={6} md={4} className="my-auto">
+          <Col sm={12} md={4} className="my-auto p-5 bg-spots-blask">
            <Logo />
           </Col>       
         </Row>

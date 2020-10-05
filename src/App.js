@@ -6,11 +6,24 @@ import Home from './components/home';
 import Aboutme from './components/aboutme'
 import Contact from './components/contact';
 import Resume from './components/resume';
-import Projects from './components/projects';
+import Artwork from './components/artwork';
+import Code from './components/code';
 
 const HeaderWithRouter = withRouter(MyNavbar);
 
 function App() {
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      document.body.style.setProperty(
+        "--scroll",
+        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+      );
+    },
+    false
+  );
+
   return (    
      <Router basename="/">
        <Fragment>
@@ -23,8 +36,8 @@ function App() {
           <Route path="/aboutme" component={ Aboutme } />
           <Route path="/contact" component={ Contact } />
 
-          <Route path="/projects/artwork" component={ Projects } />
-          <Route path="/projects/code" component={ Contact } />
+          <Route path="/projects/artwork" component={ Artwork } />
+          <Route path="/projects/code" component={ Code } />
         </Fragment>
      </Router>   
   );

@@ -15,12 +15,11 @@ const MyNavbar = props => {
           <NavDropdown title="projekt" id="basic-nav-dropdown">
             <NavDropdown.Item href="#/projects/artwork">illustration & design</NavDropdown.Item>
             <NavDropdown.Item href="#/projects/code">programmering</NavDropdown.Item>
-            <NavDropdown.Item href="/action/">Something</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="#/contact">kontakt</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      <Navbar.Brand href="#/home">ISABELLA RAMARE</Navbar.Brand>
+      <Navbar.Brand className="brand" href="#/home">ISABELLA RAMARE</Navbar.Brand>
     </Navbar>
   );
 };

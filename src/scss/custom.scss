@@ -31,11 +31,12 @@ $navbar-light-hover-color:rgba($pink, .7);
 $navbar-light-active-color:rgba($pink, .9);
 $dropdown-link-hover-color: $pink;
 $nav-link-active-color: $pink;
-$navbar-brand-font-size: 2rem;
+$navbar-brand-font-size: 1.2rem;
 
 $font-family-sans-serif: 'Montserrat', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-serif:      'Rozha One', Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:       $font-family-sans-serif;
+$line-height-base: 1.8;
 
 @import "bootstrap";

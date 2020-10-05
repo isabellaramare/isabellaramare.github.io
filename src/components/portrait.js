@@ -1,30 +1,37 @@
 import React, { Component } from 'react';
 import { Image, Tooltip, OverlayTrigger } from 'react-bootstrap';
-import isabellaportait from '../images/isabella portrait.png'
 import '../App.css';
 
 class Portrait extends Component {  
+  constructor(props) {
+    super(props);
+    this.state = {
+        imgSrc: this.props.imgSrc,
+        tooltip: this.props.tooltip,
+        style: this.props.style,
+        tooltipPosition: this.props.tooltipPosition 
+    };
+  }
+
   render() {
     const renderTooltip = (props) => (
       <Tooltip id="button-tooltip" {...props}>
           <h1>
-            Hej!
+            {this.state.tooltip}
           </h1>
       </Tooltip>        
     );
     return(
       <div>
       <OverlayTrigger
-        placement="top"
+        placement={this.state.tooltipPosition}
         delay={{ show: 200, hide: 400 }}
         overlay={renderTooltip}
       >
         <Image 
           style={{cursor: "pointer"}}                 
-          width="70%"
-          rounded
-          className="logo rounded-circle"
-          src={isabellaportait}
+          className={this.state.style}
+          src={this.state.imgSrc}
           alt="Isabella Portrait"           
           />          
       </OverlayTrigger>         
