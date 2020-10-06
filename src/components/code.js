@@ -13,10 +13,10 @@ class Code extends React.Component {
           </Col>          
         </Row>
         <Row className="mt-5">
-          <Col sm={10} md={4} className="bg-white-80 rounded-left p-4 fade">
+          <Col sm={10} md={4} className="bg-white-80 rounded-left p-4">
             
           </Col>
-          <Col sm={10} md={4} className="bg-white text-md rounded-right p-3 fade">
+          <Col sm={10} md={4} className="bg-white text-md rounded-right p-3">
             <p className="p-2">
               Lärde mig under denna studieperiod programmera 
               i flera olika språk, främst C# (.Net) 
@@ -33,10 +33,10 @@ class Code extends React.Component {
           </Col>
         </Row>
         <Row className="mt-5">
-          <Col sm={10} md={4} className="bg-white-80 rounded-left p-4 fade">
+          <Col sm={10} md={4} className="bg-white-80 rounded-left p-4">
            
           </Col>
-          <Col sm={10} md={4} className="bg-white text-md rounded-right p-3 fade">
+          <Col sm={10} md={4} className="bg-white text-md rounded-right p-3">
             <p className="p-2">
               Lärde mig under denna studieperiod programmera 
               i flera olika språk, främst C# (.Net) 

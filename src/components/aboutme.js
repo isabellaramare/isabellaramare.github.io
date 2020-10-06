@@ -28,13 +28,13 @@ class AboutMe extends React.Component {
                 saker och där man utvecklas varje dag. Jag tror också att jag är en uppskattad
                 kollega som man kan komma till om man behöver hjälp eller stöd. Förutom detta
                 älskar jag att lära mig nya saker (därav mina sex år på högskola) och fortsätter
-                gärna så hos er. Jag uppskattar kombinationen av det kreativa, visuella och det
-                tekniska så jag jobbar gärna både front-end och back-end om det finns möjlighet.
+                gärna så hos er. Jag uppskattar kombinationen av det kreativa/visuella och det
+                tekniska så jag jobbar gärna med båda delar om det finns möjlighet.
               </p>
             </div>
           </Col>
           <Col sm={12} md={4} className="my-auto">
-            <Portrait imgSrc={isabellaportait} tooltip="Nämen hejsan!" tooltipPosition="right" style="selfportrait pl-5"/>
+            <Portrait imgSrc={isabellaportait} tooltip="Nämen hejsan!" tooltipPosition="right" styling="selfportrait pl-5"/>
           </Col>   
         </Row>
       </Container>

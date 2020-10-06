@@ -6,8 +6,7 @@ import Home from './components/home';
 import Aboutme from './components/aboutme'
 import Contact from './components/contact';
 import Resume from './components/resume';
-import Artwork from './components/artwork';
-import Code from './components/code';
+import Projects from './components/projects';
 
 const HeaderWithRouter = withRouter(MyNavbar);
 
@@ -35,9 +34,7 @@ function App() {
           <Route path="/resume" component={ Resume } />
           <Route path="/aboutme" component={ Aboutme } />
           <Route path="/contact" component={ Contact } />
-
-          <Route path="/projects/artwork" component={ Artwork } />
-          <Route path="/projects/code" component={ Code } />
+          <Route path="/projects" component={Projects} />
         </Fragment>
      </Router>   
   );

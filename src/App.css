@@ -18,6 +18,10 @@ h2 {
   color: #87125D;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*  
 ::-webkit-scrollbar {
   width: 10px;
@@ -63,7 +67,6 @@ h2 {
   }
 }
 
-
 .fade-in {
   opacity: 0;
   animation-name: fadein;
@@ -77,6 +80,21 @@ h2 {
   100% {opacity: 100;}
 }
 
+.projects-link {
+  border: none;
+  background-color: transparent;
+  color: #fc63c6;
+}
+
+.projects-link:hover, .projects-link:focus {
+  text-decoration: underline;
+  color: #87125D;
+  outline: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
 
 .nav-link {
   margin: 0px 5px;  

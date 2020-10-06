@@ -32,6 +32,8 @@ $navbar-light-active-color:rgba($pink, .9);
 $dropdown-link-hover-color: $pink;
 $nav-link-active-color: $pink;
 $navbar-brand-font-size: 1.2rem;
+$link-color: $pink;
+$link-hover-color: darken($link-color, 15%);
 
 $font-family-sans-serif: 'Montserrat', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-serif:      'Rozha One', Georgia, "Times New Roman", Times, serif;

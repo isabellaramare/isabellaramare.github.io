@@ -26,7 +26,7 @@ class Resume extends React.Component {
             </div>
           </Col>
           <Col sm={12} md={4} className="my-auto fade-in">
-            <Portrait imgSrc={isabellaportait} tooltip="Hej!" tooltipPosition="top" style="logo rounded-circle"/>
+            <Portrait imgSrc={isabellaportait} tooltip="Hej!" tooltipPosition="top" styling="logo rounded-circle"/>
           </Col>       
         </Row>      
         <Row className="mt-extra">

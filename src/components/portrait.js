@@ -8,7 +8,7 @@ class Portrait extends Component {
     this.state = {
         imgSrc: this.props.imgSrc,
         tooltip: this.props.tooltip,
-        style: this.props.style,
+        style: this.props.styling,
         tooltipPosition: this.props.tooltipPosition 
     };
   }

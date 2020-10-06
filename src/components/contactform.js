@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import { Form, Row, Col } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import SubmitButton from './submitbutton';
