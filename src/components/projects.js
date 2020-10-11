@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import '../App.css';
 import carlitos from '../images/Ricos de Carlitos Color.png'
 import logo from '../images/skull-invert.svg';
+import portrait from '../images/isabella portrait.png'
 
 class Projects extends React.Component { 
   constructor(props) {
@@ -29,6 +30,8 @@ class Projects extends React.Component {
     slides[newSlide].className = 'slide showing';
   }
 
+  
+
   render() {
     return (
       <Container fluid className="full-width pt-extra bg-spots-blask">
@@ -45,8 +48,8 @@ class Projects extends React.Component {
             <ul id="slides">
               <li className="slide showing">
                 <Row className="h-100 pl-5">
-                  <Col md={2} className="my-auto pl-5 text-pink">
-                    <h1>illustration & design</h1>
+                  <Col md={2} className="my-auto pl-5 mr-5 text-pink">
+                    <h1 className="title-lg">illustration & design</h1>
                   </Col>
                   <Col md={2} className="my-auto">
                     <img src={logo} />
@@ -78,9 +81,41 @@ class Projects extends React.Component {
             </button>
           </Col>
         </Row>      
-        <Row id="code" className="justify-content-center vh-min-100">
-          <Col className="my-auto">
-            <h1>programmering & systemutveckling</h1>
+        <Row id="code" className="justify-content-center min-vh-100">
+          <Col md={10} sm={12} className="my-auto pt-5">
+            <div className="slider pt-md-5 pb-2">          
+              <div className="slides">
+                <Row className="p-md-5 p-sm-0" id="slide-1">
+                  <Col md={6}>
+                    <img className="w-100 p-md-5 p-sm-0" src={portrait} />
+                  </Col>
+                  <Col md={6}>
+                    <h1>isabella portrait</h1>
+                  </Col>
+                </Row>
+                <Row className="p-md-5 p-sm-0" id="slide-2">
+                  <Col md={6}>
+                    <img className="w-100 p-md-5 p-sm-0" src={portrait} />
+                  </Col>
+                  <Col md={6}>
+                    <h1>isabella portrait</h1>
+                  </Col>
+                </Row>
+                <Row className="p-md-5 p-sm-0" id="slide-3">
+                  <Col md={6}>
+                    <img className="w-100 p-md-5 p-sm-0" src={logo} />
+                  </Col>
+                  <Col md={6}>
+                    <h1>skull logo</h1>
+                  </Col>
+                </Row>
+              </div>
+              <a href="#slide-1">1</a>
+              <a href="#slide-2">2</a>
+              <a href="#slide-3">3</a>
+              <a href="#slide-4">4</a>
+              <a href="#slide-5">5</a>
+            </div>            
           </Col>
         </Row>
       </Container>
