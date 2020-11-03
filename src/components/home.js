@@ -2,11 +2,12 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import Logo from './skulllogo'
 import '../App.css';
+import ScrollToTop from './scrolltotop';
 
 class Home extends React.Component { 
   render() {
-    return(
-      <Container fluid className="full-width pt-extra bg-spots-blask">
+    return( 
+      <Container id="top" fluid className="full-width pt-extra bg-spots-blask">
         <Row className="justify-content-center user-select-none vh-min-100">
           <Col sm={12} md={5} className="my-auto fade-in justify-content-center">
             <h1 className="title-lg text-light">
@@ -22,6 +23,7 @@ class Home extends React.Component {
            <Logo />
           </Col>       
         </Row>
+        <ScrollToTop/>
       </Container>
     );
   }

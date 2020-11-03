@@ -157,9 +157,19 @@ html {
   margin-right: -15px;
 }
 
-.bg-tilt {
+.skeleton {
+  margin-top: 100px;
+}
+
+.bg-tilt-pink {
   background-image: url('./images/tilt-bg-pink.svg');
   background-size: cover;
+}
+
+.bg-tilt-purple {
+  background-image: url('./images/tilt-bg.svg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .bg-spots-light {
@@ -186,6 +196,7 @@ html {
 
 .bg-pink-one {
   background-color: #fc63c6bd;
+  background-attachment: fixed;
 }
 
 .bg-pink-two {
@@ -198,6 +209,10 @@ html {
 
 .bg-pink-four {
   background-color: #ffe0f4bd;
+}
+
+.bg-lilac {
+  background-color: #e5d4f7a9;
 }
 
 .bg-shells {
@@ -219,7 +234,42 @@ html {
   min-height: 40px;
 }
 
+.btn-scroll-top {
+  background-color: #fc63c6;
+  color: white;
+  border: transparent;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.btn-scroll-top:hover {
+  background-color:#87125D;
+}
+
+.btn-scroll-top:focus, .btn-scroll-top:active {
+  outline: none;
+  background-color:  #fc63c6;
+}
+
 @media screen and (max-width: 600px) {
+  .projects-link {
+    border: 1px #fc63c6 solid;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  .project-categories {
+    height: 10px;
+  }
+
+  .btn-scroll-top {
+    bottom: 10px;
+    right: 10px;
+  }
 
   .btn-slide {
     display: none;
