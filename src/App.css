@@ -19,7 +19,7 @@ h2 {
 }
 
 html {
-  scroll-behavior: smooth;
+  
 }
 
 /*  
@@ -221,6 +221,11 @@ html {
   background-attachment: fixed;
 }
 
+.flip-img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .vh-min-100 {
   min-height: 100vh;
 }
@@ -256,6 +261,10 @@ html {
 }
 
 @media screen and (max-width: 600px) {
+  .skeleton {
+    margin-top: 0px;
+  }
+
   .projects-link {
     border: 1px #fc63c6 solid;
     border-radius: 10px;

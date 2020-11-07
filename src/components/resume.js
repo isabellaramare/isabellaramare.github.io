@@ -81,7 +81,7 @@ class Resume extends React.Component {
         </Row>
         <Row className="mt-extra">
           <Col>
-          <h3 className="text-center title-md letter-space">ERFARENHET</h3>
+          <h3 className="text-center title-md letter-space mt-extra">ERFARENHET</h3>
           </Col>
         </Row>
         <Row className="my-5 vh-70 justify-content-center">

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 import '../App.css';
-import SkullLogo from './skulllogo';
 
 class MyNavbar extends React.Component {
   constructor(props){
@@ -9,12 +8,29 @@ class MyNavbar extends React.Component {
     this.state = { activeLink: 'home' };
   }
 
-  // TODO:
-  // link only gets active if you click it (not when typing the adress or pressing 'previous page')
+  componentDidMount() {
+    var splitAdress = window.location.href.split("/")
+    var subpage = splitAdress[splitAdress.length - 1]
+
+    this.setState({
+      activeLink: subpage
+    })
+  }
+
   handleClick(linkName) {
     this.setState({
       activeLink: linkName
     })
+
+    var element = document.getElementById('top');
+    
+    try {
+      element.scrollIntoView();
+    }
+
+    catch {
+
+    }
   }
 
   render() {

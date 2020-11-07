@@ -11,7 +11,7 @@ class Projects extends React.Component {
     var element = document.getElementById(scrollTo);
     
     try {
-      element.scrollIntoView();
+      element.scrollIntoView({behavior: 'smooth'});
     }
 
     catch {
