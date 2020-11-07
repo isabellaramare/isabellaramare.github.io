@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bfc937792a1933e087316f48f5568e88",
+    "revision": "38e3f00aea2752b7d5a762d27ab184cd",
     "url": "/index.html"
   },
   {
-    "revision": "032f89b5e070c5a11c4a",
+    "revision": "0c6f20b2094840b8e9b0",
     "url": "/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "032e70fb350b09906a32",
-    "url": "/static/css/main.4d986bdc.chunk.css"
+    "revision": "3305344fdf95aa72dae7",
+    "url": "/static/css/main.69003ab2.chunk.css"
   },
   {
-    "revision": "032f89b5e070c5a11c4a",
-    "url": "/static/js/2.d4db165e.chunk.js"
+    "revision": "0c6f20b2094840b8e9b0",
+    "url": "/static/js/2.e4d96ab7.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.d4db165e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e4d96ab7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "032e70fb350b09906a32",
-    "url": "/static/js/main.2bc28011.chunk.js"
+    "revision": "3305344fdf95aa72dae7",
+    "url": "/static/js/main.23c7b1c9.chunk.js"
   },
   {
     "revision": "802f054ddf00fe69ca5d",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db20bb1d7da387404c45db6bd538d000",
     "url": "/static/media/Ricos de Carlitos Color.db20bb1d.png"
+  },
+  {
+    "revision": "a98b7534bc6b0f4dd53d9a2466879457",
+    "url": "/static/media/hornimal.a98b7534.svg"
   },
   {
     "revision": "222269b3331cc30c60b5e2d05f9ffe14",

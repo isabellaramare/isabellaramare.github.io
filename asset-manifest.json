@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d986bdc.chunk.css",
-    "main.js": "/static/js/main.2bc28011.chunk.js",
-    "main.js.map": "/static/js/main.2bc28011.chunk.js.map",
+    "main.css": "/static/css/main.69003ab2.chunk.css",
+    "main.js": "/static/js/main.23c7b1c9.chunk.js",
+    "main.js.map": "/static/js/main.23c7b1c9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3ceab397.js",
     "runtime-main.js.map": "/static/js/runtime-main.3ceab397.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.d4db165e.chunk.js": "/static/js/2.d4db165e.chunk.js",
-    "static/js/2.d4db165e.chunk.js.map": "/static/js/2.d4db165e.chunk.js.map",
+    "static/js/2.e4d96ab7.chunk.js": "/static/js/2.e4d96ab7.chunk.js",
+    "static/js/2.e4d96ab7.chunk.js.map": "/static/js/2.e4d96ab7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.146262e29f1ba3e092a84ae0f7299c4d.js": "/precache-manifest.146262e29f1ba3e092a84ae0f7299c4d.js",
+    "precache-manifest.afb7f63f923dfd41324d60278b5ac525.js": "/precache-manifest.afb7f63f923dfd41324d60278b5ac525.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.4d986bdc.chunk.css.map": "/static/css/main.4d986bdc.chunk.css.map",
-    "static/js/2.d4db165e.chunk.js.LICENSE.txt": "/static/js/2.d4db165e.chunk.js.LICENSE.txt",
+    "static/css/main.69003ab2.chunk.css.map": "/static/css/main.69003ab2.chunk.css.map",
+    "static/js/2.e4d96ab7.chunk.js.LICENSE.txt": "/static/js/2.e4d96ab7.chunk.js.LICENSE.txt",
     "static/media/Ricos de Carlitos Color.png": "/static/media/Ricos de Carlitos Color.db20bb1d.png",
+    "static/media/hornimal.svg": "/static/media/hornimal.a98b7534.svg",
     "static/media/isabella portrait.png": "/static/media/isabella portrait.222269b3.png",
     "static/media/App.css": "/static/media/tilt-bg.e48381ff.svg",
     "static/media/shadow-skeleton.svg": "/static/media/shadow-skeleton.a7376187.svg",
@@ -24,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.3ceab397.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.d4db165e.chunk.js",
-    "static/css/main.4d986bdc.chunk.css",
-    "static/js/main.2bc28011.chunk.js"
+    "static/js/2.e4d96ab7.chunk.js",
+    "static/css/main.69003ab2.chunk.css",
+    "static/js/main.23c7b1c9.chunk.js"
   ]
 }
